@@ -1,0 +1,17 @@
+div {
+  width: 300px;
+  margin: 0 auto;
+  border: 4px double red;
+}
+
+img {
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 90%;
+  border: 0.25px solid black;
+
+}
+
+ol::before {
+  font-weight: bold;
+}
