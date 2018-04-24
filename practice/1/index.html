@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatssible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div>This is a div</div>
+  <div>So is this a div</div>
+  <div>I am a div too</div>
+  <div>Hey! Don't forget me!</div>
+  <script>
+    var divList = document.getElementsByTagName("div");
+
+    for (var i=0; i<divList.length; i++) {
+      divList[i].addEventListener("mouseover", makeRed, false);
+    }
+
+    function makeRed(e) {
+      this.style.backgroundColor = "red";
+    }
+
+    for (var i=0; i<divList.length; i++) {
+      divList[i].removeEventListener("click", makeWhite, false);
+    }
+
+    function makeWhite(k) {
+      this.style.backgroundColor = "white";
+    }
+
+  </script>
+
+  <table>
+    <tr>
+      <th>01</th>
+      <th>02</th>
+      <th>03</th>
+      <th>04</th>
+      <th>05</th>
+      <tr>
+        <td>COLUMN 01</td>
+        <td>COLUMN 02</td>
+        <td>COLUMN 03</td>
+        <td>COLUMN 04</td>
+        <td>COLUMN 05</td>
+      </tr>
+      <tr>
+        <td>COLUMN 01</td>
+        <td>COLUMN 02</td>
+        <td>COLUMN 03</td>
+        <td>COLUMN 04</td>
+        <td>COLUMN 05</td>
+      </tr>
+      <tr>
+        <td>COLUMN 01</td>
+        <td>COLUMN 02</td>
+        <td>COLUMN 03</td>
+        <td>COLUMN 04</td>
+        <td>COLUMN 05</td>
+      </tr>
+      <tr>
+        <td>COLUMN 01</td>
+        <td>COLUMN 02</td>
+        <td>COLUMN 03</td>
+        <td>COLUMN 04</td>
+        <td>COLUMN 05</td>
+      </tr>
+      <tr>
+        <td>COLUMN 01</td>
+        <td>COLUMN 02</td>
+        <td>COLUMN 03</td>
+        <td>COLUMN 04</td>
+        <td>COLUMN 05</td>
+      </tr>
+      <tr>
+        <td>COLUMN 01</td>
+        <td>COLUMN 02</td>
+        <td>COLUMN 03</td>
+        <td>COLUMN 04</td>
+        <td>COLUMN 05</td>
+      </tr>
+      <tr>
+        <td>COLUMN 01</td>
+        <td>COLUMN 02</td>
+        <td>COLUMN 03</td>
+        <td>COLUMN 04</td>
+        <td>COLUMN 05</td>
+      </tr>
+      <tr>
+        <td>COLUMN 01</td>
+        <td>COLUMN 02</td>
+        <td>COLUMN 03</td>
+        <td>COLUMN 04</td>
+        <td>COLUMN 05</td>
+      </tr>
+      <tr>
+        <td>COLUMN 01</td>
+        <td>COLUMN 02</td>
+        <td>COLUMN 03</td>
+        <td>COLUMN 04</td>
+        <td>COLUMN 05</td>
+      </tr>
+    </tr>
+  </table>
+</body>
+</html>
