@@ -1,18 +1,17 @@
-// function isEven(x){
-//   if(x % 2 == 0){
-//     return true
-//   }
-// }
-//
-// function factorial(x){
-//   for(i = x; i > 0; i--){
-//     var y = x*i;
-//     return y
-//   }
-// }
+function isEven(x){
+  return (x % 2 == 0);
+}
 
-function subtract(x){
+function factorial(num){
 
-  for(i = x; i > 0; i--)
-  console.log(i);
+  var result = 1;
+
+  for(i = num; i > 0; i--){
+    result *= i;
+  }
+  return result;
+}
+
+function kebabToSnake(str){
+  return str.replace(/-/g, "_");
 }
